@@ -12,7 +12,7 @@ export class HelloCrudService {
     if(this.data[parseInt(index, 10)]) {
       return this.data[parseInt(index, 10)];
     }
-    throw new HttpException(`No data found at index: ${index}`, HttpStatus.BAD_REQUEST);
+    throw new HttpException(`No data found at index: ${index}`, HttpStatus.NOT_FOUND);
   }
 
   create(requestBody): string {

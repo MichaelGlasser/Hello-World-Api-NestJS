@@ -11,7 +11,7 @@ describe('AppController (e2e)', () => {
 
   beforeAll(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [HelloWorldApp],
+      imports: [HelloWorldApp]
     }).compile();
 
     app = moduleFixture.createNestApplication();
@@ -51,7 +51,7 @@ describe('AppController (e2e)', () => {
     it('should return an empty data array', () => {
       return request(app.getHttpServer())
         .delete('/hello')
-        .expect(204)
+        .expect(204);
     });
 
     it('and /hello/:id GET should fail because the entity is gone', () => {

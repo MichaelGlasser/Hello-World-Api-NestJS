@@ -5,6 +5,6 @@ import { HelloCrudService } from './services/hello-crud-service';
 @Module({
   imports: [],
   controllers: [HelloCrudRoutes],
-  providers: [HelloCrudService],
+  providers: [HelloCrudService]
 })
 export class HelloWorldApp {}

@@ -9,7 +9,7 @@ describe('HelloCrudRoutes', () => {
   beforeEach(async () => {
     const helloWorldTestingModule: TestingModule = await Test.createTestingModule({
       controllers: [HelloCrudRoutes],
-      providers: [HelloCrudService],
+      providers: [HelloCrudService]
     }).compile();
 
     helloWorldController = helloWorldTestingModule.get<HelloCrudRoutes>(HelloCrudRoutes);

@@ -9,16 +9,16 @@ export class HelloCrudService {
   }
 
   getSingle(index: string): any {
-    if(this.data[parseInt(index, 10)]) {
+    if (this.data[parseInt(index, 10)]) {
       return this.data[parseInt(index, 10)];
     }
     throw new HttpException(`No data found at index: ${index}`, HttpStatus.NOT_FOUND);
   }
 
   create(requestBody): string {
-    if(requestBody.title) {
+    if (requestBody.title) {
       this.data.push({ title: requestBody.title });
-      return 'Saved data to array'
+      return 'Saved data to array';
     }
     throw new HttpException('A title must be provided to create an entity', HttpStatus.BAD_REQUEST);
   }

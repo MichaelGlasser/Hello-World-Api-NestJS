@@ -1,8 +1,8 @@
 {
-  "name": "hello-world-api",
+  "name": "hello-world-api-nestjs",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "A simple Hello World API to demonstrate some of the capabilities of NestJS",
+  "author": "Michael Glasser",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
